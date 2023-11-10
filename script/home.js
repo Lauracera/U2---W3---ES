@@ -36,7 +36,7 @@ window.onload = () => {
         `;
 
         container.appendChild(col);
-        col.appendChild(card);
+        col.appendChild;
       })
     );
 };
