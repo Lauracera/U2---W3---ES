@@ -11,14 +11,46 @@
     />
     <title>Back Office</title>
   </head>
+
   <body class="bg-secondary-subtle">
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html">
+            <img
+              src="./assets/—Pngtree—e-letter logo ecommerce shop store_7265997.png"
+              width="80px"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./home.html"
+                >Home</a
+              >
+              <a class="nav-link" href="./backOffice.html">Back Office</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section>
         <form class="container mt-5">
           <div class="row">
             <div class="col">
-              <h2 class="mb-5 fs-2">Inserisci qui i tuoi prodotti:</h2>
+              <h2 class="mb-4 mt-4 fs-2">Inserisci qui i tuoi prodotti</h2>
             </div>
           </div>
           <div class="row mb-3">
@@ -26,7 +58,7 @@
               <label for="text" class="form-label">Name:</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-sm"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -38,7 +70,7 @@
               <label for="text" class="form-label">Description:</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-sm"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -50,7 +82,7 @@
               <label for="text" class="form-label">Brand:</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-sm"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -62,7 +94,7 @@
               <label for="text" class="form-label">ImageURL:</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-sm"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -74,7 +106,7 @@
               <label for="text" class="form-label">Price:</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control shadow-sm"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -87,14 +119,23 @@
 
           <div class="row mb-3 mt-3">
             <div class="col-4">
-              <button ù>Salva</button>
+              <button class="rounded-2 border-0 bg-primary text-light">
+                Salva
+              </button>
+              <button class="rounded-2 border-0 bg-success text-light">
+                Modifica
+              </button>
             </div>
+
             <div class="col-4">
-              <button>Elimina</button>
+              <button class="rounded-2 border-0 bg-dark text-light">
+                Elimina
+              </button>
             </div>
           </div>
         </form>
       </section>
     </main>
+    <script src="script/backOffice.js"></script>
   </body>
 </html>
